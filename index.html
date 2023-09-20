@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <title>Mon Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="content">
+
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+
+            <ul class="menu-list">
+
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#AboutMe">About Me</a>
+                <a href="#Skills">Skills</a>
+                <a href="#MyProjects">My Projects</a>
+            </ul>
+
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="AboutMe">
+
+        <img src="image/Anonymous.png" alt="">
+        <div class="description">
+            <h2>About Me</h2>
+            <h4>I am a Developer and Auditor</h4>
+            <p>
+                I'm looking to become a smart contract developer and auditor. I currently have less than a year of
+                experience.I will have the skills to create a dapps for you from A to Z and with very high security
+                levels.</p>
+        </div>
+
+    </div>
+
+    <div id="Skills">
+
+        <h2>My Skills</h2>
+
+        <div class="Cards">
+
+            <div class="Card">
+                <h3>Web 2</h3>
+                <p>I master Html/Css ,React and Python. Click on the button to see more about these languages and the
+                    projects made with.</p>
+                <a class="button" href="#">Read more</a>
+            </div>
+
+
+            <div class="Card">
+                <h3>Web 3</h3>
+                <p>I master Solidity. Click on the button to see more about these
+                    languages and the projects made with.</p>
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Audit smart contract</h3>
+                <p>I did a lot of auditing with code4arena. Click on the button to find out more about my previous
+                    audits.</p>
+                <a class="button" href="#">Read more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="MyProjects">
+
+        <h2>My Projects</h2>
+
+        <div class="Cards">
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+            <div class="Card">
+                <h3>Pentesting</h3>
+                <img src="image/demo projects.png" alt="">
+                <a class="button" href="#">Read more</a>
+            </div>
+
+        </div>
+
+        <div class="btnProject">
+            <a class="button" href="#">More Projects</a>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        const link = document.querySelector(".menu-list");
+
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        link.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+    </script>
+
+</body>
+
+</html>
